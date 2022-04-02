@@ -1,7 +1,7 @@
 import { Link, NavLink } from "react-router-dom"
 import "./index.scss"
 import LogosSide from "../../assets/images/logo-s.png"
-import LogosSubtitle from "../../assets/images/logo_sub.png"
+// import LogosSubtitle from "../../assets/images/logo_sub.png"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEnvelope, faHome } from "@fortawesome/free-solid-svg-icons"
