@@ -1,4 +1,8 @@
 .home-page {
+  display: flex;
+  flex-flow: row !important;
+  // align-items: center;
+  flex: 1 1 100%;
     .text-zone {
       position: absolute;
       left: 10%;
@@ -76,6 +80,24 @@
       &:hover {
         background: #ffd700;
         color: #333;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      display: block;
+      overflow: hidden;
+      flex-flow: column !important;
+      .text-zone {
+        width: 80%;
+        left: 20%;
+
+        top: 50%;
+        transform: translateY(-50%);
+        max-height: 80%;
+      }
+
+      .logo {
+        display: none;
+        margin-top: 400px;
       }
     }
   }

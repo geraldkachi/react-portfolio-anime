@@ -16,8 +16,6 @@ const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   useEffect(() => {
-
-    return 
     setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
@@ -31,9 +29,13 @@ const About = () => {
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
+              idx={-10}
             />
           </h1>
+          <p>
+            Hello! I'm Adimora Augustine Onyekachi //  alias: 'Gerald kachi' 🤓, a software engineer
+            based in Nigeria 🇳🇬.
+          </p>
           <p>
             I'm very ambitious front-end developer looking for a role in
             established IT company with the opportunity to work with the latest
@@ -44,12 +46,24 @@ const About = () => {
           >
             I'm quietly confident, naturally curious, and perpetually working on
             improving my chops one design problem at a time.
-          </p>
           <p>
             If I need to define myself in one sentence that would be a family
-            person, a sports fanatic,            
+            person, a sports fanatic,
           </p>
+          <p>Here are a few technologies I've been working with recently:</p>
+          <p>Javascript (ES6+)
+            <div> HTML & (S)CSS</div>
+            <div>React/Redux</div>
+            <div>ReactNative</div>
+            <div>Node.js</div>
+          </p>
+          <p>
+          I am open to new job opportunities. If you wanna get in touch, talk to me about a project collaboration or just say hi, click the button below or send an email to fitzgeraldkachi.com and ~let's talk!
+          </p>
+          </p>
+          <a className="mail" href="mailto:fitzgeraldkachi@gmail.com">Say Hello</a>
         </div>
+
 
         <div className="stage-cube-cont">
           <div className="cubespinner">

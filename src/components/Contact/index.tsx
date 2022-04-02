@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
@@ -89,22 +89,21 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Slobodan Gajić,
+          Adinora Augustine Onyekachi,
+          alias: gerlad kachi
           <br />
-          Serbia,
+          Nigeria Lagos,
+          <br />      
           <br />
-          Branka RadiČevića 19, 22000 <br />
-          Sremska Mitrovica <br />
-          <br />
-          <span>freelancerslobodan@gmail.com</span>
+          <span>fitzgeraldkachi@gmail.com</span>
         </div>
         <div className="map-wrap">
-          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+          {/* <MapContainer center={[44.96366, 19.61045]} zoom={13}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[44.96366, 19.61045]}>
-              <Popup>Sloba lives here, come over for a cup of coffee :</Popup>
+              <Popup>Kachi lives here, come over for a cup of coffee :</Popup>
             </Marker>
-          </MapContainer>
+          </MapContainer> */}
         </div>
       </div>
       <Loader active type="pacman" />
