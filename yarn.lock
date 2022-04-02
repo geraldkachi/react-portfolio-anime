@@ -4498,11 +4498,6 @@ gsap-trial@^3.10.2:
   resolved "https://registry.yarnpkg.com/gsap-trial/-/gsap-trial-3.10.2.tgz#62ca9d1b9a5c0d7c8c0ffc921747d4c297339328"
   integrity sha512-0WVkjOOXC1VkiKzNX6hazoseAqIUitzK7ZJmrc3gYJUqicVKW2TWKgnSm97YPQtiBZUmWAn8TRWlKcDrSlouew==
 
-gsap@^3.10.1:
-  version "3.10.1"
-  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.10.1.tgz#6c9e1486458656d6a6d51e580359c9aef4debbfb"
-  integrity sha512-8SItjfNRh2ntZ44F7yNkH+/+wKwOpAIk+Za7fcw8ZPskrIPqu8lDjdMfqhlCYlSlFKoybr3gMpBi9xV38rdoQg==
-
 gzip-size@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/gzip-size/-/gzip-size-6.0.0.tgz#065367fd50c239c0671cbcbad5be3e2eeb10e462"
