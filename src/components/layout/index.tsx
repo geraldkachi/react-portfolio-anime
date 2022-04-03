@@ -7,6 +7,7 @@ const Layout = () => {
         <SideBar />
         <div className="page">
           <span className="tags top-tags">&lt;body&gt;</span>
+          <a className="page-btn" href="https://docs.google.com/document/d/1oGgW-IUaa6wgpc-96BxSTi5T62GP1M40nLXGSRdQQm8/edit?usp=sharing">Resume</a>
 
           <Outlet />
           <span className="tags bottom-tags">&lt;body&gt;

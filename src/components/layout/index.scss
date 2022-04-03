@@ -4,6 +4,16 @@
   position: absolute;
 }
 
+.page-btn {
+  background-color:#ffd700;
+  padding: 10px;
+  border: 1px solid #ffd700;;
+  text-align: right;
+  float: right;
+  margin: 20px;
+  border-radius: 5px;
+}
+
 .top-tags {
   bottom: auto;
   top: 35px;
@@ -31,7 +41,6 @@
   position: absolute;
   opacity: 0;
   top: 5%;
-  // left: 30px;
   margin: 0 auto;
   z-index: 1;
   transform-style: preserve-3d;
@@ -55,9 +64,6 @@
       width: 75%;
       left: 20%;
       margin: 0 10px;
-      // overflow: hidden;
-      // display: block !important;
-      // flex-flow: column !important;
     }
 
 
