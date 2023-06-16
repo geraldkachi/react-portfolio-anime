@@ -46,7 +46,6 @@ const Contact = () => {
         () => {
           setLoading(false)
           alert('Message successfully sent!')
-          // window.location.reload()
           // @ts-ignore
           form.current.reset()
         },
