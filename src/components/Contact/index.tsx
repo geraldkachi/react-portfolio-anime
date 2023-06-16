@@ -44,8 +44,11 @@ const Contact = () => {
       )
       .then(
         () => {
+          setLoading(false)
           alert('Message successfully sent!')
-          window.location.reload()
+          // window.location.reload()
+          // @ts-ignore
+          form.current.reset()
         },
         () => {
           alert('Failed to send the message, please try again')
