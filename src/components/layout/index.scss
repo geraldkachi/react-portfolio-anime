@@ -12,6 +12,9 @@
   float: right;
   margin: 20px;
   border-radius: 5px;
+  cursor: pointer;
+  z-index: 9999px;
+  position: relative;
 }
 
 .top-tags {

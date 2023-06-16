@@ -8,6 +8,8 @@ import './index.scss'
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef<any>()
+  const [loading, setLoading] = useState<boolean>(false)
+
 
   useEffect(() => {
      setTimeout(() => {
@@ -18,12 +20,27 @@ const Contact = () => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
 
+    // emailjs
+    // .send(
+    //   `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`,
+    //   `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`,
+    //   {
+    //     from_name: form.name,
+    //     to_name: "Gerald Kachi",
+    //     from_email: form.email,
+    //     to_email: "fitzgeraldkachi@gmail.com",
+    //     message: form.message,
+    //   },
+    //   `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`
+    // )
+    setLoading(true)
     emailjs
       .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
+        // 'gmail',
+        'service_cwlw4rh',
+        'template_rk36t0l',
         form.current,
-        'your-token'
+        '7D14rARv1RZ-ROOyU'
       )
       .then(
         () => {
@@ -82,7 +99,7 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input type="submit" className="flat-button" value="SEND" />
+                  <input disabled={loading} style={{borderColor: loading ?  "green" : "", color: loading  ? 'green': "" }} type="submit" className="flat-button" value="SEND" />
                 </li>
               </ul>
             </form>
@@ -93,7 +110,7 @@ const Contact = () => {
           alias: gerlad kachi
           <br />
           Nigeria Lagos,
-          <br />      
+          <br />
           <br />
           <span>fitzgeraldkachi@gmail.com</span>
         </div>

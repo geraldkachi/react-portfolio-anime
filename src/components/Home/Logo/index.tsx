@@ -7,7 +7,7 @@ const Logo = () => {
     const bgRef = useRef<any>()
     const outlineLogoRef = useRef<any>()
     const solidLogoRef = useRef<any>()
-    
+
 
     useEffect(() => {
         gsap.registerPlugin()
