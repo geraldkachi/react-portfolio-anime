@@ -12,7 +12,7 @@ const Contact = () => {
 
 
   useEffect(() => {
-     setTimeout(() => {
+    setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 3000)
   }, [])
@@ -36,11 +36,10 @@ const Contact = () => {
     setLoading(true)
     emailjs
       .sendForm(
-        // 'gmail',
-        'service_cwlw4rh',
-        'template_rk36t0l',
+        `${process.env.REACT_APP_EMAILJS_SERVICE_ID}`,
+        `${process.env.REACT_APP_EMAILJS_TEMPLATE_ID}`,
         form.current,
-        '7D14rARv1RZ-ROOyU'
+        `${process.env.REACT_APP_EMAILJS_PUBLIC_KEY}`,
       )
       .then(
         () => {
@@ -51,6 +50,7 @@ const Contact = () => {
         },
         () => {
           alert('Failed to send the message, please try again')
+          setLoading(false)
         }
       )
   }
@@ -101,7 +101,7 @@ const Contact = () => {
                   ></textarea>
                 </li>
                 <li>
-                  <input disabled={loading} style={{borderColor: loading ?  "green" : "", color: loading  ? 'green': "" }} type="submit" className="flat-button" value="SEND" />
+                  <input disabled={loading} style={{ borderColor: loading ? "green" : "", color: loading ? 'green' : "" }} type="submit" className="flat-button" value="SEND" />
                 </li>
               </ul>
             </form>
